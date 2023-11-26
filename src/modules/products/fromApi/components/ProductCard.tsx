@@ -10,7 +10,7 @@ interface Props {
 export default function ProductCard({product}: Props) {
   return (
     <Link to={`/products/${product.id}`} className="w-full flex flex-col max-w-[300px] bg-white border border-gray-200 rounded-lg shadow">
-      <img className="p-8 rounded-t-lg flex mx-auto object-contain h-[300px]" src={product?.image ?? "no-image.png"} alt="product image" />
+      <img className="p-8 rounded-t-lg flex mx-auto object-contain h-[300px]" src={product?.image ?? "no-image.png"} alt="product" />
       <div className="px-5 pb-5 flex flex-col justify-between grow">
         <div>
           <h5 className="text-xl font-semibold tracking-tight line-clamp-3 text-gray-900">{product.title}</h5>
